@@ -1,0 +1,13 @@
+.product-style img{
+    width: 250px;
+    transition: .5s ease-out;
+}
+.product-style img:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+.p-btn{
+    height: 30px;
+    width: 120px;
+    font-size: 16px;
+}

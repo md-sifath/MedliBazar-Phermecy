@@ -1,0 +1,24 @@
+.footer-style{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #34495E;
+    margin-top: 200px;
+    color: white;
+}
+.newslater-style input{
+    height:30px;
+    padding-left: 5px;
+    width: 200px;
+}
+.btn{
+    height: 36px;
+    margin-left: 2px;
+    width: 50px;
+}
+.copy{
+    text-align: center;
+    color: white;
+    background-color: #34495E;
+    padding-bottom: 20px;
+}
