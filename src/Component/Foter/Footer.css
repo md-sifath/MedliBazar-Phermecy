@@ -22,3 +22,15 @@
     background-color: #34495E;
     padding-bottom: 20px;
 }
+
+@media only screen and (max-width :689px){
+    .footer-style{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap:30px;
+    }
+    .copy{
+        
+        padding-top: 20px;
+    }
+}

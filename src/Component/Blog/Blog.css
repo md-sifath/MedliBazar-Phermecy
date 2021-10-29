@@ -1,0 +1,13 @@
+.BlogPage{
+    margin-top: 80px;
+    text-align: left;
+    margin-left: 150px;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width :689px){
+    .BlogPage{
+        margin-left: 20px;
+    }
+}

@@ -44,3 +44,19 @@ hr{
     background-color: #126074;
     color: white;
 }
+
+@media only screen and (max-width :689px){
+    .from-page{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap:30px;
+    }
+    .image img{
+        width: 320px;
+     }
+     .login-form{
+        width: 300px;
+        margin-left: 30px;
+        text-align: left;
+    }
+}

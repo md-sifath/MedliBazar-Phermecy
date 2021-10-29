@@ -1,0 +1,29 @@
+.details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:30px;
+    align-items: left;
+}
+.p-text-part{
+    margin-top: 50px;
+    text-align: left;
+}
+
+@media only screen and (max-width :689px)
+{
+    .details{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        align-items: left;
+    }
+    .p-image img{
+        width:300px;
+        margin-top: 50px ;
+    }
+    .p-text-part{
+        width: 280px;
+        margin-left: 10px;
+    }
+}
+

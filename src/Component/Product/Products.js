@@ -7,8 +7,8 @@ const Products = () => {
     const {product} = usePdata();
     
     return (
-        <div>
-        <h1>Our Products</h1>
+        <div id="product">
+        <h1 className="product-h1">Our Products</h1>
             <div className="products-style">
             {
                 product.map((product)=> <SingleP
