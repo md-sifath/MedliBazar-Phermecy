@@ -1,20 +1,12 @@
-import React, { useEffect } from 'react';
-import { useState } from 'react/cjs/react.development';
+
+import React, { useState,useEffect } from 'react';
 
 const usePdata = () => {
 
-    const [product,setProduct]=useState([]);
-
-    useEffect(()=>{
-        fetch('./productData.json')
-        .then(res=>res.json())
-        .then(data=>setProduct(data));
-    },[])
-
-
-    return {
-        product
-    }
+    return (
+        <>
+        </>
+    );
 };
 
 export default usePdata;

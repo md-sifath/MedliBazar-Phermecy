@@ -9,7 +9,9 @@ import { HashLink } from 'react-router-hash-link';
 const Header = () => {
     const { user, logOut } = useAuth();
     const style = {
-        fontSize: "20px"
+        fontSize: "20px",
+        padding:"5px",
+        textDecoration:"none"
     }
     return (
 
@@ -20,8 +22,8 @@ const Header = () => {
                 <Navbar.Collapse className="justify-content-end">
                     <Nav.Link as={HashLink} to="/home#home" style={style}>Home</Nav.Link>
                     <Nav.Link as={HashLink} to="/home#product" style={style}>Product</Nav.Link>
-                    <Nav.Link as={Link} to="/aboutus" style={{ fontSize: '20px' }}>About Us</Nav.Link>
-                    <Nav.Link as={Link} to="/blog" style={{ fontSize: '20px' }}>Blogs</Nav.Link>
+                    <Nav.Link as={Link} to="/aboutus" style={ style}>About Us</Nav.Link>
+                    <Nav.Link as={Link} to="/blog" style={style}>Blogs</Nav.Link>
 
                     {user?.email ?
                         <Button onClick={logOut} variant="primary" className="me-2">Logout</Button> :

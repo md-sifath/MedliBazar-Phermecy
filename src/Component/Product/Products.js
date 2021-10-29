@@ -1,10 +1,17 @@
 import React from 'react';
-import usePdata from '../Hooks/usePdata';
+import { useState,useEffect } from 'react';
 import SingleP from './SingleP';
 import './Products.css';
 
 const Products = () => {
-    const {product} = usePdata();
+    const [product,setProduct]=useState([]);
+
+    useEffect(()=>{
+        fetch('./productData.json')
+        .then(res=>res.json())
+        .then(data=>setProduct(data));
+    },[])
+
     
     return (
         <div id="product">

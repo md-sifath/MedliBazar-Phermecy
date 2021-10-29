@@ -12,6 +12,7 @@ import Blog from './Component/Blog/Blogs';
 import AboutUs from './Component/About/AboutUs';
 import AuthProvider from "./Component/Context/AuthProvider";
 import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
+import NotFound from './Component/Not Found/NotFound';
 
 function App() {
   return (
@@ -43,6 +44,9 @@ function App() {
             </Route>
             <Route path="/signup">
               <Signup></Signup>
+            </Route>
+            <Route path="/*">
+                <NotFound></NotFound>
             </Route>
           </Switch>
           <Footer></Footer>

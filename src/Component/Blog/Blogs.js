@@ -1,10 +1,17 @@
 import React from 'react';
-import useBdata from '../Hooks/useBdata';
+import { useState,useEffect } from 'react';
 import Blog from './Blog';
 import './Blog.css';
 
 const Blogs = () => {
-    const {blogdata}=useBdata();
+    const [blogdata, setBlogdata]=useState([]);
+
+    useEffect(()=>{
+        fetch('./blogData.json')
+        .then(res=>res.json())
+        .then(data=>setBlogdata(data));
+    },[])
+
     return (
         <div>
         <h1>Our Blogs</h1>
