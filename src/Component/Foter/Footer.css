@@ -29,6 +29,10 @@
         grid-template-columns: 1fr;
         grid-gap:30px;
     }
+    .newslater-style input{
+        display: block;
+        margin: auto;
+    }
     .copy{
         
         padding-top: 20px;
